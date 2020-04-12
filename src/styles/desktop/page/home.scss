@@ -3,9 +3,9 @@
 }
 
 .article {
+  //width: 1370px; // А это нахер ???????
+  //height: 570px; вот это я бы задал элементу, который без высоты прост оне может существовать - .article__preview
   background-color: $color-light-grey;
-  height: 570px;
-  width: 1370px;
 
   &__content {
     display: flex;
@@ -18,7 +18,29 @@
   }
 
   &__preview{
-    background: url("") no-repeat;
     flex-basis: 50%;
+    height: 570px;
+    background-image: url("/public/img/light-art-building.jpg"); // Слава пиши пока все отдельно!
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  &__footer {
+
+    &-item {
+
+    }
+  }
+}
+
+.navigation {
+
+  &__list {
+
+  }
+
+  &__item {
+
   }
 }

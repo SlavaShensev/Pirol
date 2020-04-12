@@ -3,58 +3,56 @@
 }
 
 body {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: $font-default;
-  font-weight: normal;
+  width: 100%;
+  height: 100%;
   color: $color-black;
+  font-size: 16px;
+  font-family: $font-default;
+  line-height: 1.5;
+  font-weight: 500; // У тебя начертания дефолтного шрифта 500, ты ж его сам подключал))
+}
+
+.container {
+  width: 1172px;
+  margin: 0 auto;
 }
 
 .title {
-  color: $color-black;
+  //color: $color-black;  зачем это писать, у body и так задан черный цвет???
   font-family: $font-accent;
-  opacity: -1;
-  font-size: 38px;
-  font-weight: 500;
-  line-height: 84px;
-  letter-spacing: 0.38px;
+  font-weight: bold;
+
+  &-lg {
+    font-size: 38px; // Вот это желательно держать в модификаторах, т.к. заголовком может быть больше чем один
+    line-height: 84px;
+    letter-spacing: 0.38px;
+  }
 }
 
 .text {
-
-  &-exlg {
-
-  }
+  color: $color-grey;
 
   &-lg {
 
   }
 
   &-md {
-    opacity: -1;
-    color: $color-grey;
-    font-family: $font-default;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.08px;
-    text-transform: uppercase;
+    // font-family: $font-default;  зачем это писать, у body и так задан этот шрифт???
+    //font-size: 16px; // md (medium) это желательно всегда базовый шрифт, т.е. как у <body>
+    //line-height: 24px;
+    // letter-spacing: 0.08px; TODO: где ты это свойство взял?
   }
 
   &-sm {
-    opacity: -1;
-    color: $color-grey;
-    font-family: $font-default;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.08px;
+
   }
 
-}
-
-
-.container {
-  width: 1172px;
-  margin: 0 auto;
+  //&-md {
+    // font-family: $font-default;  зачем это писать, у body и так задан этот шрифт???
+    // font-weight: 400; зачем это писать, у body и так задано эта жирность??
+    //font-size: 16px;
+    //line-height: 30px; // TODO: напомни, когад будешь у меня обсудим этот момент.
+    //letter-spacing: 0.08px;
+    //text-transform: uppercase;
+  //}
 }
