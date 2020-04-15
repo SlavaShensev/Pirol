@@ -5,18 +5,18 @@
   &__content {
     color: $color-grey;
     width: 100%;
-    height: 200px;
+    height: 200px; //TODO: а если ссылок в меню навигации станет больше?
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__address {
-margin-top: 20px;
+    margin-top: 20px;
     .footer__makers {
       color: #f6f6f6;
       font-family: $font-accent;
-      line-height: 72px;
+      line-height: 72px; // TODO: это делается педдингом снизу, я тебе обьяснял уже
       font-size: 18px;
 
 
