@@ -1,0 +1,81 @@
+<%= require('html-loader!./includes/header.html') %>
+
+<main class="main">
+
+    <div class="article">
+        <div class="container">
+            <div class="article__content">
+                <div class="article__info">
+                    <h1 class="title title-lg">
+                        Light Breakfast
+                    </h1>
+                    <div class="text text-md">
+                        <p>Light his can't a creeping. Be, bring blessed night. Replenish<br>
+                            blessed creature good. Saw earth every creepeth lights day,<br>
+                            divided abundantly form. In. Said given lights. Sixth the male.<br>
+                            Upon their multiply. Kind beast. Him tree upon.<br>
+                        <p>Cattle. Dominion day herb she'd creeping divide darkness.<br>
+                            Which. Subdue had.</p>
+                    </div>
+                    <ul class="article__footer">
+                        <!--  TODO: Зачем нужен класс .footer-bold ? чем <b> хуже ?? -->
+                        <li class="article__footer-item"><span class="footer-bolt"> Client:</span> Emma Morris</li>
+                        <li class="article__footer-item"><span class="footer-bolt"> Date:</span> 25.06.2017</li>
+                        <li class="article__footer-item">
+                            <span class="footer-bolt">Share:</span>
+                            <!--  TODO: Вот тут нужен target="_blank" это ссылка на сторонний ресурс -->
+                            <a href="#" class="article__footer-item-social none-style " title="Facebook">
+                                Facebook,
+                            </a>
+                            <a href="#" class="article__footer-item-social none-style" title="Twitter">
+                                Twitter,
+                            </a>
+                            <a href="#" class="article__footer-item-social none-style " title="Pinterest">
+                                Pinterest
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="article__preview"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="container">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--left">
+                    <span class="navigation__link-icon-left">
+                            <img src="/public/img/arrow-left.png" alt="arrow-left">
+                        </span>
+                        <span class="navigation__link-label">
+                            <!--  TODO: text-transform: uppercase ?  -->
+                            <b>PREVIOUS PROJECT</b>
+                        </span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--icon">
+                    <span class="navigation__link-icon">
+                            <img src="/public/img/icon.png" alt="arrow-right">
+                        </span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--right">
+                        <span class="navigation__link-label">
+                            <b>NEXT PROJECT</b>
+                        </span>
+                        <span class="navigation__link-icon-right">
+                            <img class="img-right" src="/public/img/arrow-left.png" alt="arrow-right">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</main>
+
+<%= require('html-loader!./includes/footer.html') %>
