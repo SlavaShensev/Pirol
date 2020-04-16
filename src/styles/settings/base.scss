@@ -32,7 +32,7 @@ img {
   margin: 0;
 
   &-lg {
-    font-size: 38px; // Вот это желательно держать в модификаторах, т.к. заголовком может быть больше чем один
+    font-size: 38px;
     line-height: 84px;
     letter-spacing: 0.38px;
   }
@@ -61,7 +61,4 @@ img {
   }
 }
 
-.img-right {
-  transform: rotate(180deg);
-  padding-right: 10px;
-}
+
