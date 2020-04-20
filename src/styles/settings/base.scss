@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   font-family: $font-default;
   line-height: 1.5;
+  margin: 0;
 }
 
 * {
@@ -27,38 +28,10 @@ img {
 }
 
 .title {
-  font-family: $font-accent;
-  font-weight: bold;
-  margin: 0;
 
-  &-lg {
-    font-size: 38px;
-    line-height: 84px;
-    letter-spacing: 0.38px;
-  }
+&__xl {
+
 }
 
-.text {
-  color: $color-grey;
-  font-size: 16px;
-
-  &-lg {
-
-  }
-
-  &-md {
-    line-height: 24px;
-    padding-bottom: 20px;
-  }
-
-  &-sm {
-
-  }
-
-
-  &-md {
-
-  }
 }
-
 
