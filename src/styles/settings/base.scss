@@ -1,11 +1,10 @@
-body {
+html, body {
   width: 100%;
   height: 100%;
   color: $color-black;
   font-size: 16px;
   font-family: $font-default;
   line-height: 1.5;
-  margin: 0;
 }
 
 * {
@@ -17,6 +16,19 @@ img {
   max-height: 100%;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  .main {
+    flex: 1 0 auto;
+  }
+
+  .footer {
+    flex: 0 0 auto;
+  }
+}
 
 .container {
   width: 1172px;
@@ -28,10 +40,38 @@ img {
 }
 
 .title {
+  font-family: $font-accent;
+  font-weight: bold;
+  margin: 0;
 
-&__xl {
-
+  &-lg {
+    font-size: 38px;
+    line-height: 84px;
+    letter-spacing: 0.38px;
+  }
 }
 
+.text {
+  color: $color-grey;
+  font-size: 16px;
+
+  &-lg {
+
+  }
+
+  &-md {
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+
+  &-sm {
+
+  }
+
+
+  &-md {
+
+  }
 }
+
 

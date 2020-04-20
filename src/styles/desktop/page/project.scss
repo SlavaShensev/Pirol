@@ -1,0 +1,100 @@
+.main--project {
+  .article {
+    background-color: $color-light-grey;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__info {
+      flex-basis: 50%;
+      padding-right: 15px;
+      max-width: 100%;
+    }
+
+    &__preview {
+      flex-basis: 47%;
+      height: 570px;
+      background-image: url("/public/img/light-art-building.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    &__footer {
+      list-style: none;
+      padding-bottom: 20px;
+      padding-left: 0;
+
+      &-item {
+        color: $color-grey;
+
+        //.footer-bolt { TODO
+        //  color: $color-black;
+        //  font-weight: 700;
+        //}
+
+        &-social {
+          color: $color-grey;
+        }
+      }
+    }
+  }
+
+  //.bolt { TODO
+  //  color: #060101;
+  //  font-weight: 900;
+  //}
+
+  .navigation {
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+
+    }
+
+    &__link {
+      display: inline-block;
+      text-decoration: none;
+
+      &-label {
+        font-family: $font-accent;
+        line-height: 84px; //TODO: what ??
+        letter-spacing: 1.2px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        padding-left: 5px;
+      }
+
+      &--left {
+        color: $color-black;
+        font-family: $font-accent;
+        font-size: 12px;
+      }
+
+      &--right {
+        color: $color-black;
+        font-family: $font-accent;
+        font-size: 12px;
+      }
+
+      &-icon-left {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  //.img-right { TODO
+  //  transform: rotate(180deg);
+  //  padding-right: 10px;
+  //}
+}
