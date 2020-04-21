@@ -31,7 +31,7 @@ img {
 }
 
 .container {
-  width: 1172px;
+  max-width: 1172px;
   margin: 0 auto;
 }
 
@@ -41,34 +41,38 @@ img {
 
 .title {
   font-family: $font-accent;
-  color: $color-black;
   font-weight: bold;
   margin: 0;
 
   &-hg {
+    color: $color-black;
     font-size: 38px;
     line-height: 48px;
     letter-spacing: 0.3px;
   }
 
   &__lg {
+    color: $color-black;
     font-size: 30px;
     letter-spacing: 0.3px;
   }
 
   &__md {
+    color: $color-black;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.3px;
   }
 
   &__sm {
+    color: $color-black;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.5px;
   }
 
   &__lt {
+    color: $color-black;
     font-size: 12px;
     line-height: 30px;
     letter-spacing: 1.2px;
@@ -79,23 +83,25 @@ img {
 .text {
 
   font-family: $font-default;
-  color: $color-grey;
   font-weight: 400;
   margin: 0;
 
   &-lg {
     font-size: 18px;
     line-height: 28px;
+    color: $color-grey;
   }
 
   &-md {
     font-size: 16px;
     line-height: 24px;
+    color: $color-grey;
   }
 
   &-sm {
     font-size: 15px;
     line-height: 24px;
+    color: $color-grey;
   }
 
 }
@@ -105,6 +111,7 @@ img {
   height: 54px;
   background-color: $color-blue;
   color: #ffffff;
+  border: none;
 
   &-accent {
 
