@@ -4,16 +4,68 @@
   .section--banner {
     width: 100%;
     height: 100vh;
-    background-image: url("/public/img/light-art-building.jpg");
+    background-image: url("/public/img/1920x1080-5402362-chair-white-laptop-macbook-apple-tech-technology-minimal-design-interior-product-shoot-product-photo-mac-product-imac-computer-fashion-macbook-pro-mac-creative-commons-images.jpg");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
 
-    .banner {
-      &__title {
 
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 43.5%;
+      margin-left: auto;
+
+      &__title {
+        margin-top: 226px;
+      }
+
+      &__description {
+        padding-top: 23px;
+      }
+
+      &__action {
+        padding-top: 32px;
       }
     }
   }
 
+  .section--about {
+    width: 100%;
+    margin-bottom: 97px;
+
+
+
+    .about {
+      text-align: center;
+      width: 53%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &__title {
+        padding-bottom: 23px;
+      }
+
+      &__description {
+        padding-bottom: 34px;
+      }
+
+      &__signature {
+
+      }
+    }
+
+  }
+
+  .section--skills {
+
+
+
+  }
+
 }
+
+
+
+
