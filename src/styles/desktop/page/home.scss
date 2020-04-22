@@ -33,7 +33,7 @@
 
   .section--about {
     width: 100%;
-    margin-bottom: 79px;
+    margin-bottom: 100px;
     margin-top: 97px;
 
 
@@ -59,23 +59,47 @@
   }
 
   .section--skills {
-    width: 100%;
+    background-color: $color-light-grey;
 
     .skills {
       display: flex;
+      height: 570px;
+
 
 
       &__content {
         flex: 1 0 50%;
-        background-color: $color-light-grey;
+
+
+        .skills__title {
+          padding-top: 160px;
+          padding-bottom: 9px;
+        }
+
+        .skills__list {
+          list-style: none;
+          padding: 0;
+
+          .skills__item {
+          padding-bottom: 39px;
+
+            &-label {
+              padding-bottom: 4px;
+            }
+          }
+        }
+
       }
 
       &__background {
         flex: 1 0 50%;
-
-        .img__background {
-
-        }
+        min-height: 570px;
+        min-width: 685px;
+        background-image: url("/public/img/pikrepo.com.jpg");
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        z-index: 100;
       }
     }
   }
