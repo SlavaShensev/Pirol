@@ -61,6 +61,7 @@
   .section--skills {
     background-color: $color-light-grey;
 
+
     .skills {
       display: flex;
       height: 570px;
@@ -92,12 +93,11 @@
 
       &__background {
         flex: 1 0 50%;
-        min-height: 570px;
-        min-width: 685px;
         background-image: url("/public/img/pikrepo.com.jpg");
         background-repeat: no-repeat;
-        background-position: 50%;
+        background-position: 50% 50%;
         background-size: cover;
+
 
       }
     }
@@ -117,18 +117,18 @@
       &__list {
         list-style: none;
         display: flex;
-
-
+        margin-right: 70px;
 
         .advantage__item {
           display: flex;
-          justify-content: space-between;
-          padding-right: 100px;
+
+
+
 
           &-logo {
           padding-top: 13px;
-
-
+            margin-right: 20px;
+            padding-left: 40px;
           }
 
           &-label {
@@ -140,6 +140,31 @@
 
     }
   }
+
+  .section--work {
+
+    .work {
+
+      &__preview {
+
+
+
+      }
+
+      &__content {
+        background-color: $color-light-grey;
+
+        &-label {
+          display: flex;
+          justify-content: center;
+        }
+
+      }
+
+    }
+
+  }
+
 }
 
 
