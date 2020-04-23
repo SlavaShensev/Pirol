@@ -30,11 +30,6 @@ img {
   }
 }
 
-.container {
-  max-width: 1172px;
-  margin: 0 auto;
-}
-
 .none-style {
   text-decoration: none;
 }
@@ -131,32 +126,5 @@ img {
     font-size: 15px;
     line-height: 24px;
     color: $color-grey;
-  }
-}
-
-.button {
-  width: 180px;
-  height: 54px;
-  background-color: $color-blue;
-  color: #ffffff;
-  border: none;
-
-  &-accent {
-
-  }
-
-}
-
-.progress {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 3px;
-  width: 500px;
-  background-color: #d8d8d8;
-
-  &-bar {
-    background-color: $color-blue;
-    height: 3px;
   }
 }

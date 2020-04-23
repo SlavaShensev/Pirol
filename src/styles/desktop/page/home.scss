@@ -1,25 +1,18 @@
 .main--home {
   padding: 0;
 
-  .section--banner {
+  .section--hero {
     width: 100%;
     min-height: 668px;
-    background-image: url("/public/img/1920x1080-5402362-chair-white-laptop-macbook-apple-tech-technology-minimal-design-interior-product-shoot-product-photo-mac-product-imac-computer-fashion-macbook-pro-mac-creative-commons-images.jpg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
 
-
-    .banner {
+    .hero {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 43.5%;
-      margin-left: auto;
+      padding-top: 226px;
+      padding-left: 64px;
+      padding-bottom: 160px;
 
-      &__title {
-        margin-top: 226px;
-      }
 
       &__description {
         padding-top: 23px;
@@ -28,20 +21,23 @@
       &__action {
         padding-top: 32px;
       }
+
+    }
+
+    @include media-breakpoint-down(md) {
+      .hero {
+        padding-left: 0;
+      }
     }
   }
 
   .section--about {
     width: 100%;
-    margin-bottom: 100px;
-    margin-top: 97px;
-
+    padding-bottom: 100px;
+    padding-top: 97px;
 
     .about {
       text-align: center;
-      width: 53%;
-      margin-left: auto;
-      margin-right: auto;
 
       &__title {
         padding-bottom: 23px;
@@ -55,89 +51,55 @@
 
       }
     }
-
   }
 
   .section--skills {
     background-color: $color-light-grey;
 
-
     .skills {
-      display: flex;
-      height: 570px;
+      padding-top: 160px;
+      padding-bottom: 113px;
 
-
-      &__content {
-        flex: 1 0 50%;
-
-
-        .skills__title {
-          padding-top: 160px;
-          padding-bottom: 9px;
-        }
-
-        .skills__list {
-          list-style: none;
-          padding: 0;
-
-          .skills__item {
-            padding-bottom: 39px;
-
-            &-label {
-              padding-bottom: 4px;
-            }
-          }
-        }
-
+      &__title {
+        padding-bottom: 36px;
       }
 
-      &__background {
-        flex: 1 0 50%;
-        background-image: url("/public/img/pikrepo.com.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
+      &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
 
+      &__item {
+        padding-bottom: 39px;
 
+        &-label {
+          padding-bottom: 4px;
+        }
       }
     }
   }
 
   .section--advantage {
     background-color: $color-blue;
-    height: 240px;
-
+    padding-top: 100px;
+    padding-bottom: 66px;
 
     .advantage {
-      display: flex;
-      justify-content: center;
-      padding-top: 70px;
 
-
-      &__list {
-        list-style: none;
+      &__item {
         display: flex;
-        margin-right: 70px;
+        padding-bottom: 30px;
 
-        .advantage__item {
-          display: flex;
+        &-logo {
+          padding-top: 6px;
+          margin-right: 20px;
+        }
 
-
-
-
-          &-logo {
-          padding-top: 13px;
-            margin-right: 20px;
-            padding-left: 40px;
-          }
-
-          &-label {
-
-          }
+        &-label {
 
         }
       }
-
     }
   }
 
@@ -164,7 +126,6 @@
     }
 
   }
-
 }
 
 

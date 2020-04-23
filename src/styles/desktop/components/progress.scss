@@ -1,0 +1,13 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 3px;
+  background-color: #d8d8d8;
+
+  &-bar {
+    height: 100%;
+    background-color: $color-blue;
+  }
+}

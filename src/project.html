@@ -2,10 +2,10 @@
 
 <main class="main main--project">
 
-    <div class="article">
-        <div class="container">
-            <div class="article__content">
-                <div class="article__info">
+    <section class="section section--article">
+        <div class="section__content">
+            <div class="container">
+                <div class="article">
                     <h1 class="title title-lg">
                         Light Breakfast
                     </h1>
@@ -34,10 +34,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="article__preview"></div>
             </div>
         </div>
-    </div>
+        <div class="section__background section__background--half section__background--right"
+             style="background-image: url('/public/img/light-art-building.jpg')"
+        ></div>
+    </section>
 
     <div class="navigation">
         <div class="container">
@@ -72,7 +74,6 @@
             </ul>
         </div>
     </div>
-
 </main>
 
 <%= require('html-loader!./includes/footer.html') %>

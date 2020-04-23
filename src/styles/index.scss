@@ -1,11 +1,16 @@
 @import "settings/fonts";
-@import "settings/normalize";
 @import "settings/variables";
+@import "settings/libs";
+@import "settings/normalize";
 @import "settings/base";
+
+@import "desktop/components/button";
+@import "desktop/components/progress";
 
 @import "desktop/layout/header";
 @import "desktop/layout/footer";
 @import "desktop/layout/main";
+@import "desktop/layout/sections";
 
 @import "desktop/page/home";
 @import "desktop/page/project";

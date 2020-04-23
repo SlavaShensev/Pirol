@@ -1,0 +1,12 @@
+.button {
+  min-width: 180px;
+  height: 54px;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &-accent {
+    color: #ffffff;
+    background-color: $color-blue;
+  }
+}
