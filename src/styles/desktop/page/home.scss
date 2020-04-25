@@ -118,12 +118,13 @@
 
         .works__photo {
           position: absolute;
-          max-width: 565px;
+          min-width: 570px;
           top: 50%;
           left: 50%;
           z-index: 1;
-          transform: translate3d( -50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
         }
+
         .works__title {
           display: flex;
           justify-content: center;
@@ -137,10 +138,10 @@
           transition: opacity .2s linear;
         }
       }
+
       .works__item:hover .works__title {
         opacity: 1;
       }
-
 
 
     }
