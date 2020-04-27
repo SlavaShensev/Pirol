@@ -212,7 +212,36 @@
 
   }
 
+  .section--clients {
 
+      .clients {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        &__item {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          width: 20%;
+
+          .advantage-logo {
+
+          }
+
+
+        }
+      }
+  }
+
+  .section--form {
+    background-color: $color-light-grey;
+    &font {
+
+    }
+  }
 
 }
 
