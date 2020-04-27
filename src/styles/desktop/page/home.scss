@@ -209,35 +209,41 @@
   .section-testimonials {
 
 
-
   }
 
   .section--clients {
-
-      .clients {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
-
-        &__item {
-          padding-top: 70px;
-          padding-bottom: 70px;
-          width: 20%;
-
-          .advantage-logo {
-
-          }
-
-
+    .clients {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 70px;
+      padding-top: 70px;
+      text-align: center;
+      &__item {
+        height: 70px;
+        &-logo {
         }
       }
+    }
+    @media screen and (max-width: 992px) {
+      .clients__item {
+        flex: 0 0 30%;
+        max-width: 50%;
+        padding-bottom: 10px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .clients__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 10px;
+      }
+    }
   }
 
   .section--form {
     background-color: $color-light-grey;
+
     &font {
 
     }
