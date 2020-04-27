@@ -246,36 +246,43 @@
 
   .section--contact {
     background-color: $color-light-grey;
-
     .contact {
       &__header {
         text-align: center;
+        padding-top: 105px;
+        padding-bottom: 40px;
+        .contact__title {
+          padding-bottom: 40px;
+        }
       }
       &__body {
+        padding-bottom: 105px;
         .form {
-          background-color: #787878;
-
           .form__item {
-            background-color: #801015;
+            padding-bottom: 30px;
             .form__input {
-              background-color: #1d1d1d;
+              padding-left: 20px;
+              padding-right: auto;
+              border: none;
+              width: 100%;
+              font-size: 15px;
+              line-height: 24px;
+              font-family: $font-default;
+              height: 48px;
+              text-align: left;
+              &--textarea {
+                height: 170px;
+              }
             }
           }
         }
         .contact__form {
-          background-color: #342ec9;
+          text-align: center;
         }
       }
-
-
-
-
-
-
-
-
-
     }
-
   }
 }
+
+
+
