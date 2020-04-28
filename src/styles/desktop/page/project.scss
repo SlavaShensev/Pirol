@@ -18,11 +18,6 @@
         &-item {
           color: $color-grey;
 
-          //.footer-bolt { TODO
-          //  color: $color-black;
-          //  font-weight: 700;
-          //}
-
           &-social {
             color: $color-grey;
           }
@@ -30,11 +25,6 @@
       }
     }
   }
-
-  //.bolt { TODO
-  //  color: #060101;
-  //  font-weight: 900;
-  //}
 
   .navigation {
     &__list {
@@ -80,9 +70,4 @@
       }
     }
   }
-
-  //.img-right { TODO
-  //  transform: rotate(180deg);
-  //  padding-right: 10px;
-  //}
 }

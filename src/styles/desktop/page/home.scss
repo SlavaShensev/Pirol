@@ -105,64 +105,60 @@
 
   .section--works {
 
-
     .works {
       display: flex;
       flex-wrap: wrap;
+    }
 
-      //TODO вот до секции advantage все было норм, а теперт строишь 3 этажа, проскролль вверх и посомтри как нужно стили строить
+    .works__item {
+      width: 25%;
+      height: 324px;
+      position: relative;
+      overflow: hidden;
 
-      .works__item {
-        width: 25%;
-        min-height: 300px; // тут можно задать строго height
-        position: relative;
-        overflow: hidden;
-
-        .works__photo {
-          position: absolute;
-          min-width: 570px; // Нет, посмотри внимательно на фото, они искаженны
-          top: 50%;
-          left: 50%;
-          z-index: 1;
-          transform: translate3d(-50%, -50%, 0);
-        }
-
-        .works__title {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.7);
-          opacity: 0;
-          position: absolute;
-          z-index: 2;
-          transition: opacity .2s linear;
-          cursor: pointer;
-        }
+      .works__photo {
+        position: absolute;
+        min-width: 515px;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate3d(-50%, -50%, 0);
       }
 
-      .works__item:hover .works__title {
-        opacity: 1;
+      .works__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        position: absolute;
+        z-index: 2;
+        transition: opacity .3s linear;
+        cursor: pointer;
       }
     }
 
-    @media screen and (max-width: 900px) {
-      .works__item {
-        flex: 50%;
-        max-width: 50%;
-      }
+    .works__item:hover .works__title {
+      opacity: 1;
     }
-
-    @media screen and (max-width: 600px) {
-      .works__item {
-        flex: 100%;
-        max-width: 100%;
-      }
-    }
-
-
   }
+
+  @media screen and (max-width: 900px) {
+    .works__item {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .works__item {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
 
   .section--process {
     width: 100%;
@@ -192,6 +188,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &__img {
+          top: 50%;
+          left: 50%;
+        }
       }
     }
   }
@@ -273,8 +274,7 @@
         }
 
         &__input {
-          padding-left: 20px;
-          padding-right: 20px;
+          padding: 18px 18px 18px 18px;
           border: none;
           width: 100%;
           font-size: 15px;

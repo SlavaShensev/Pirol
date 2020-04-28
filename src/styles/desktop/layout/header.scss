@@ -19,24 +19,22 @@
   }
 }
 
-.menu {
+.header__nav {
   display: flex;
   justify-content: center;
 
-
-  .header__item {
+  &-item {
     &:not(:first-child) {
       margin-left: 24px;
-
     }
   }
 
-  .header__link {
+  &-link {
     text-transform: uppercase;
-  }
 
-  .header__link :hover {
-    color: $color-blue;
+    & :hover {
+      color: $color-blue;
+    }
   }
-
 }
+

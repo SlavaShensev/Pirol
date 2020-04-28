@@ -3,9 +3,11 @@
   background-color: $color-black;
 
   &__content {
-    padding: 95px 100px 95px 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     .footer__address {
+
 
       .footer__makers {
         padding-bottom: 30px;
@@ -19,14 +21,16 @@
   }
 
   &__contact {
-    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
     .footer__email {
-      padding-bottom: 10px;
+
     }
 
     .footer__number {
-
+      padding-right: 34px;
     }
   }
 
@@ -35,18 +39,17 @@
     justify-content: center;
 
     .menu__list-left {
-      padding-right: 55px;
+
     }
 
     .menu__list-right {
-
+      padding-left: 50px;
     }
 
   }
 
   &__social {
-    display: flex;
-    justify-content: center;
+padding-left: 130px;
   }
 }
 
