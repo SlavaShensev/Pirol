@@ -1,101 +1,61 @@
-//TODO сделай адаптацию под планшет и моблу http://joxi.ru/nAywpnXsjnoK7m , у тебя там по макету все через сетку, переделай на bootstrap grid, так же не поправлены еще старые TODO!
-
 .footer {
   position: relative;
   background-color: $color-black;
 
   &__content {
-    color: $color-grey;
-    width: 100%;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+    padding: 95px 100px 95px 100px;
 
-  &__address {
-    margin-top: 20px;
+    .footer__address {
 
-    .footer__makers {
-      color: #f6f6f6;
-      font-family: $font-accent;
-      line-height: 72px; // TODO: это делается педдингом снизу, я тебе обьяснял уже  --??????
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 0.18px;
+      .footer__makers {
+        padding-bottom: 30px;
+      }
 
+      .footer__copyright {
+
+      }
     }
 
-    .footer__copyright {
-      line-height: 24px;
-      letter-spacing: 0.07px;
-      font-weight: 400;
-      font-size: 15px;
-      font-family: $font-default;
-    }
   }
 
   &__contact {
-
-    padding-bottom: 35px;
+    padding-left: 200px;
 
     .footer__email {
-      color: $color-grey;
-      font-family: $font-default;
-      line-height: 24px;
-      font-weight: 400;
-      letter-spacing: 0.07px;
+      padding-bottom: 10px;
     }
 
     .footer__number {
-      color: $color-grey;
-      font-family: $font-default;
-      line-height: 24px;
-      font-weight: 400;
-      letter-spacing: 0.07px;
+
     }
   }
-
 
   &__menu {
     display: flex;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.07px;
-
+    justify-content: center;
 
     .menu__list-left {
-      list-style: none;
-
-      .footer__link {
-        color: $color-grey;
-      }
+      padding-right: 55px;
     }
 
     .menu__list-right {
-      list-style: none;
-
-      .footer__link {
-        color: $color-grey;
-      }
 
     }
+
   }
 
   &__social {
-
-    &__list {
-      list-style: none;
-    }
-
-    .social__link {
-      color: $color-grey;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 24px;
-      letter-spacing: 0.07px;
-    }
+    display: flex;
+    justify-content: center;
   }
 }
+
+
+
+
+
+
+
+
+
+

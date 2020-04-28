@@ -20,27 +20,23 @@
 }
 
 .menu {
-  list-style: none;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
 
-  &__item {
+
+  .header__item {
     &:not(:first-child) {
       margin-left: 24px;
+
     }
   }
 
-  &__link {
-    letter-spacing: 1.2px;
-    line-height: 24px;
-    font-size: 12px;
-    font-family: $font-accent;
-    font-weight: 500;
+  .header__link {
     text-transform: uppercase;
-    color: $color-black;
   }
-}
 
+  .header__link :hover {
+    color: $color-blue;
+  }
+
+}
