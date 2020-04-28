@@ -105,19 +105,22 @@
 
   .section--works {
 
+
     .works {
       display: flex;
       flex-wrap: wrap;
 
+      //TODO вот до секции advantage все было норм, а теперт строишь 3 этажа, проскролль вверх и посомтри как нужно стили строить
+
       .works__item {
         width: 25%;
-        min-height: 300px;
+        min-height: 300px; // тут можно задать строго height
         position: relative;
         overflow: hidden;
 
         .works__photo {
           position: absolute;
-          min-width: 570px;
+          min-width: 570px; // Нет, посмотри внимательно на фото, они искаженны
           top: 50%;
           left: 50%;
           z-index: 1;
@@ -204,6 +207,8 @@
       text-align: center;
     }
 
+    // TODO: нужно на mobile ограничивать описание, его сильно растолкало по сторонам http://joxi.ru/krDEgL9IJnNe5m
+
   }
 
   .section-testimonials {
@@ -242,6 +247,7 @@
         padding-bottom: 10px;
       }
     }
+    //http://joxi.ru/vAWxWXYCq4b8Zr отступы нужно номральные, что за каша
   }
 
   .section--contact {
@@ -267,6 +273,7 @@
         }
 
         &__input {
+          //TODO: нужен отступ с права тоже http://joxi.ru/Y2LWl6qHQN0B1m
           padding-left: 20px;
           padding-right: auto;
           border: none;
