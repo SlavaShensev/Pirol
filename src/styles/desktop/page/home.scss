@@ -135,7 +135,7 @@
         opacity: 0;
         position: absolute;
         z-index: 2;
-        transition: opacity .3s linear;
+        transition: opacity .1s linear;
         cursor: pointer;
       }
     }
@@ -181,7 +181,7 @@
     .process__video {
       padding-bottom: 100px;
 
-      .video-play {
+      .video__play {
         background-color: $color-light-grey;
         min-height: 570px;
         width: 100%;
@@ -190,8 +190,8 @@
         align-items: center;
 
         &__img {
-          top: 50%;
-          left: 50%;
+          padding-top: 3px;
+          padding-left: 3px;
         }
       }
     }
@@ -208,13 +208,34 @@
       text-align: center;
     }
 
-    // TODO: нужно на mobile ограничивать описание, его сильно растолкало по сторонам http://joxi.ru/krDEgL9IJnNe5m
+    @media screen and (max-width: 768px) {
+      .services__item-label {
+        padding-right: 150px;
+        padding-left: 150px;
+      }
+    }
 
   }
 
-  .section-testimonials {
+  .section--testimonials {
+    background-color: #10c9c3;
 
+    .testimonials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+      &__label {
+        padding-top: 180px;
+        padding-bottom: 180px;
+      }
+    }
+    .testimonials__label {
+      text-align: center;
+    }
+    .testimonials__text {
+      padding-top: 40px;
+    }
   }
 
   .section--clients {
@@ -238,17 +259,16 @@
       .clients__item {
         flex: 0 0 30%;
         max-width: 50%;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
     }
     @media screen and (max-width: 768px) {
       .clients__item {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
     }
-    //http://joxi.ru/vAWxWXYCq4b8Zr отступы нужно номральные, что за каша
   }
 
   .section--contact {
@@ -287,6 +307,10 @@
             height: 170px;
           }
         }
+      }
+
+      input:invalid {
+        box-shadow: 0 0 5px 1px red;
       }
 
       .contact__form {
